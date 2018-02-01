@@ -16,7 +16,8 @@ pdc.projectInsert("createProject", pm);
 pdc.projectInsert("overviewInsert",pm);
 }
 public static void main(String[] args){
-
+projectCreator pc = new projectCreator();
+pc.projectCreate("実験ですよ","太郎","概要ですよ");
 }
 
 }
