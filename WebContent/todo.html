@@ -14,5 +14,28 @@ media="all">
 <script type="text/javascript" src="js/todo/garage.js"></script>
 <script type="text/javascript" src="js/todo/todoCreator.js"></script>
 <body>
+<ul id="menu">
+<li>todo
+<ul class="sub" id="todo">
+</ul>
+</li>
+<li>doing
+<ul class="sub" id="doing">
+</ul>
+</li>
+<li>done
+<ul class="sub" id="done">
+</ul>
+</li>
+</ul>
 
+<form >
+<H1>新しいタスクを登録</H1>
+<ul>
+<li><label>title:</label><input type="text" id="insertTitle"></li>
+<li><label>overview:</label> <textarea id="insertOverview"></textarea></li>
+<li><input type="button" value="登録" onclick= todoInsert() ></li>
+</ul>
+
+</form>
 </body>
