@@ -3,8 +3,21 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="igakilab.mybatis.product">
+<insert id="createProject">
+INSERT INTO
+project(id,name,owner)
+VALUES
+(#{id},#{name},#{owner});
+</insert>
 
+<update id="overviewInsert">
+UPDATE project
+SET overview = #{overview}
+WHERE id = #{id}
+</update>
 <select id="listenProject" resultType="jp.ac.oit.igakilab.tctr.project.projectManager">
 SELECT * FROM project;
+
+
 </select>
 </mapper>
