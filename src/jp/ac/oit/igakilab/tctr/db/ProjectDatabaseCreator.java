@@ -20,4 +20,10 @@ public class ProjectDatabaseCreator {
         }
         return selectList;
     }
+    public void projectInsert(String mapper,projectManager pm){
+    	try (SqlSession session = factory.openSession()){
+    	session.insert(mapper,pm);
+    	session.commit();
+    	}
+    	}
 }
