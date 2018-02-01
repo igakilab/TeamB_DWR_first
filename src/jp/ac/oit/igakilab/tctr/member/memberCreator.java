@@ -21,5 +21,7 @@ mdc.memberInsert("memberInsert", mm);
 }
 
 public static void main(String[] args){
+memberCreator mc = new memberCreator();
+mc.memberInsert("秋元", "igklab", "4回生", 22);
 }
 }
