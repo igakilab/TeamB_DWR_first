@@ -6,5 +6,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <select id="memberListen" resultType="jp.ac.oit.igakilab.tctr.member.memberManager">
 SELECT * FROM member;
 </select>
-
+<insert id="memberInsert">
+INSERT INTO
+member(member_id,name,org,age,position)
+VALUES
+(#{member_id},#{name},#{org},#{age},#{position});
+</insert>
 </mapper>
