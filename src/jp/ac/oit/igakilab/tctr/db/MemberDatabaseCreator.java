@@ -18,4 +18,11 @@ memberList = session.selectList(mapper,mm);
 }
 return memberList;
 }
+
+public void memberInsert(String mapper,memberManager mm){
+try (SqlSession session = factory.openSession()){
+session.insert(mapper,mm);
+session.commit();
+}
+}
 }
