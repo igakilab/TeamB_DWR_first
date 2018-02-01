@@ -7,6 +7,9 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 select * from todolist;
 </select>
 
+<select id="selectTodoListen" resultType="jp.ac.oit.igakilab.tctr.todoList.todoManager">
+select * from todolist WHERE id = #{id};
+</select>
 
 
 </mapper>
